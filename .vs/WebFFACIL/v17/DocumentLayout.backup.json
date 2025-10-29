@@ -1,0 +1,247 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SitioFFACIL.COM\\WebFFACIL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\views\\contacto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:views\\contacto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\controllers\\distribuidorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:controllers\\distribuidorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\models\\distribuidorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:models\\distribuidorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\views\\distribuidores\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:views\\distribuidores\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|c:\\sitioffacil.com\\webffacil\\models\\contactoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6127C7A2-BC74-41F1-909F-0E57C98C1B43}|WebFFACIL.csproj|solutionrelative:models\\contactoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:17:58.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-27T03:05:28.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAewIkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T02:49:45.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DistribuidorViewModel.cs",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Models\\DistribuidorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\DistribuidorViewModel.cs",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Models\\DistribuidorViewModel.cs",
+              "RelativeToolTip": "Models\\DistribuidorViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwDAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T02:38:06.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DistribuidoresController.cs",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Controllers\\DistribuidoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DistribuidoresController.cs",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Controllers\\DistribuidoresController.cs",
+              "RelativeToolTip": "Controllers\\DistribuidoresController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T02:38:02.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Views\\Contacto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contacto\\Index.cshtml",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Views\\Contacto\\Index.cshtml",
+              "RelativeToolTip": "Views\\Contacto\\Index.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAswIMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T02:35:05.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T02:32:15.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContactoController.cs",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Controllers\\ContactoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactoController.cs",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Controllers\\ContactoController.cs",
+              "RelativeToolTip": "Controllers\\ContactoController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T02:38:39.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Views\\Distribuidores\\Registro.cshtml",
+              "RelativeDocumentMoniker": "Views\\Distribuidores\\Registro.cshtml",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Views\\Distribuidores\\Registro.cshtml",
+              "RelativeToolTip": "Views\\Distribuidores\\Registro.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T02:40:57.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Readme.md",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Readme.md",
+              "RelativeDocumentMoniker": "Readme.md",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Readme.md",
+              "RelativeToolTip": "Readme.md",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwF4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-27T03:19:35.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContactoViewModel.cs",
+              "DocumentMoniker": "C:\\SitioFFACIL.COM\\WebFFACIL\\Models\\ContactoViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ContactoViewModel.cs",
+              "ToolTip": "C:\\SitioFFACIL.COM\\WebFFACIL\\Models\\ContactoViewModel.cs",
+              "RelativeToolTip": "Models\\ContactoViewModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T02:37:24.004Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

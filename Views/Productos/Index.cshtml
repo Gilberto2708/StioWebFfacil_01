@@ -1,0 +1,278 @@
+﻿@{
+    ViewData["Title"] = "Productos - FacturaFácil.net";
+}
+
+<!-- Hero Section -->
+<section class="hero-section-small">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold">Nuestros Productos</h1>
+                <p class="lead">Soluciones completas de facturación electrónica adaptadas a las necesidades de tu negocio</p>
+            </div>
+            <div class="col-lg-4 text-end">
+                <a asp-controller="Productos" asp-action="Compare" class="btn btn-custom btn-outline-custom">
+                    <i class="bi bi-arrow-left-right me-2"></i>Comparar Sistemas
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Productos Section -->
+<section class="products-detail-section">
+    <div class="container">
+
+        <!-- COBE73 START -->
+        <div class="product-detail-card" id="cobe73-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="product-badge">BÁSICO</div>
+                    <h2 class="product-title">COBE73 START</h2>
+                    <p class="product-subtitle">Ideal para emprendedores y pequeños negocios</p>
+                    <p class="product-description">
+                        Sistema de facturación electrónica básico con todas las funcionalidades esenciales
+                        para cumplir con el SAT. Perfecto para iniciar tu negocio de forma profesional.
+                    </p>
+
+                    <div class="product-features">
+                        <h5><i class="bi bi-check-circle-fill me-2"></i>Características principales:</h5>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Facturación CFDI 4.0</li>
+                            <li><i class="bi bi-check2"></i> Catálogo de clientes</li>
+                            <li><i class="bi bi-check2"></i> Catálogo de productos</li>
+                            <li><i class="bi bi-check2"></i> Timbrado ilimitado</li>
+                            <li><i class="bi bi-check2"></i> Envío automático por email</li>
+                            <li><i class="bi bi-check2"></i> Reportes básicos</li>
+                            <li><i class="bi bi-check2"></i> 1 usuario incluido</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="1" class="btn btn-custom btn-primary-custom">
+                            Ver Detalles
+                        </a>
+                        <a asp-controller="Precios" asp-action="Index" asp-fragment="start" class="btn btn-custom btn-outline-custom">
+                            Ver Precios
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-image-placeholder">
+                        <i class="bi bi-receipt-cutoff"></i>
+                        <p>COBE73 START</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COBE73 HALF -->
+        <div class="product-detail-card" id="cobe73-half">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="product-badge badge-popular">POPULAR</div>
+                    <h2 class="product-title">COBE73 HALF</h2>
+                    <p class="product-subtitle">Para negocios en crecimiento</p>
+                    <p class="product-description">
+                        Sistema intermedio con funcionalidades avanzadas de inventarios y control financiero.
+                        La opción más equilibrada entre precio y funcionalidad.
+                    </p>
+
+                    <div class="product-features">
+                        <h5><i class="bi bi-check-circle-fill me-2"></i>Todo lo de START más:</h5>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Control de inventarios</li>
+                            <li><i class="bi bi-check2"></i> Cuentas por cobrar</li>
+                            <li><i class="bi bi-check2"></i> Cuentas por pagar</li>
+                            <li><i class="bi bi-check2"></i> Complemento de pagos</li>
+                            <li><i class="bi bi-check2"></i> Reportes avanzados</li>
+                            <li><i class="bi bi-check2"></i> Multi-sucursal</li>
+                            <li><i class="bi bi-check2"></i> Hasta 3 usuarios</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="2" class="btn btn-custom btn-primary-custom">
+                            Ver Detalles
+                        </a>
+                        <a asp-controller="Precios" asp-action="Index" asp-fragment="half" class="btn btn-custom btn-outline-custom">
+                            Ver Precios
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="product-image-placeholder">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <p>COBE73 HALF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COBE73 FULL -->
+        <div class="product-detail-card" id="cobe73-full">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="product-badge badge-premium">PREMIUM</div>
+                    <h2 class="product-title">COBE73 FULL</h2>
+                    <p class="product-subtitle">Solución empresarial completa</p>
+                    <p class="product-description">
+                        Sistema completo con todas las funcionalidades para empresas que requieren
+                        control total de sus operaciones financieras y administrativas.
+                    </p>
+
+                    <div class="product-features">
+                        <h5><i class="bi bi-check-circle-fill me-2"></i>Todo lo de HALF más:</h5>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Módulo de bancos</li>
+                            <li><i class="bi bi-check2"></i> Conciliación bancaria</li>
+                            <li><i class="bi bi-check2"></i> Contabilidad electrónica</li>
+                            <li><i class="bi bi-check2"></i> Flujo de efectivo</li>
+                            <li><i class="bi bi-check2"></i> Dashboard ejecutivo</li>
+                            <li><i class="bi bi-check2"></i> API para integraciones</li>
+                            <li><i class="bi bi-check2"></i> Usuarios ilimitados</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="3" class="btn btn-custom btn-primary-custom">
+                            Ver Detalles
+                        </a>
+                        <a asp-controller="Precios" asp-action="Index" asp-fragment="full" class="btn btn-custom btn-outline-custom">
+                            Ver Precios
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-image-placeholder">
+                        <i class="bi bi-building"></i>
+                        <p>COBE73 FULL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complementos Section -->
+        <div class="complementos-section">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Complementos Especializados</h2>
+                <p class="section-subtitle">Amplía las capacidades de tu sistema con nuestros módulos adicionales</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Nómina -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="complemento-card">
+                        <div class="complemento-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4>Nómina Electrónica</h4>
+                        <p>Sistema completo de nómina con timbrado de recibos CFDI 4.0</p>
+                        <ul>
+                            <li>Cálculo automático de nómina</li>
+                            <li>Timbrado de recibos</li>
+                            <li>Dispersión bancaria</li>
+                            <li>Reportes al IMSS e INFONAVIT</li>
+                        </ul>
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="4" class="btn btn-sm btn-custom btn-outline-custom w-100">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Carta Porte -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="complemento-card">
+                        <div class="complemento-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h4>Carta Porte 3.3</h4>
+                        <p>Complemento para transporte de mercancías</p>
+                        <ul>
+                            <li>Complemento carta porte</li>
+                            <li>Catálogos SAT actualizados</li>
+                            <li>Órdenes de embarque</li>
+                            <li>Cotizaciones por ruta</li>
+                        </ul>
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="5" class="btn btn-sm btn-custom btn-outline-custom w-100">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Respaldos -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="complemento-card">
+                        <div class="complemento-icon">
+                            <i class="bi bi-cloud-arrow-up-fill"></i>
+                        </div>
+                        <h4>Respaldos en la Nube</h4>
+                        <p>Protege tu información con respaldos automáticos</p>
+                        <ul>
+                            <li>Respaldo automático diario</li>
+                            <li>Almacenamiento seguro</li>
+                            <li>Recuperación rápida</li>
+                            <li>Desde 50GB hasta 500GB</li>
+                        </ul>
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="6" class="btn btn-sm btn-custom btn-outline-custom w-100">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Web Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="complemento-card">
+                        <div class="complemento-icon">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h4>Web Service API</h4>
+                        <p>Integra la facturación con tus sistemas</p>
+                        <ul>
+                            <li>API RESTful</li>
+                            <li>Documentación completa</li>
+                            <li>Soporte técnico</li>
+                            <li>Webhooks disponibles</li>
+                        </ul>
+                        <a asp-controller="Productos" asp-action="Details" asp-route-id="7" class="btn btn-sm btn-custom btn-outline-custom w-100">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-box">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3><i class="bi bi-question-circle me-2"></i>¿No sabes cuál sistema elegir?</h3>
+                    <p>Nuestros asesores te ayudarán a encontrar la solución perfecta para tu negocio</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <a asp-controller="Contacto" asp-action="Index" class="btn btn-custom btn-primary-custom btn-lg">
+                        Contactar Asesor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Smooth scroll to product sections
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const element = document.querySelector(hash);
+                if (element) {
+                    setTimeout(() => {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+}

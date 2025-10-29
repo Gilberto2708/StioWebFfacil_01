@@ -1,0 +1,283 @@
+﻿@{
+    ViewData["Title"] = "FacturaFácil.net - Lo hacemos sencillo para ti";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <h1>Facturación inteligente que hace crecer tu Negocio</h1>
+                    <p class="lead">El software preferido por más de 1.2 millones de contadores, PYMES y emprendedores. Cumple con el SAT fácilmente.</p>
+
+                    <div class="tagline">
+                        ¡En la nube o en escritorio, tú eliges cómo trabajar!
+                    </div>
+
+                    <ul class="hero-features">
+                        <li>Ideal para contadores, despachos y PYMES.</li>
+                        <li>Ahorra tiempo, cumple con el SAT y haz crecer tu negocio.</li>
+                        <li>Tecnología y soporte 100% mexicano, alineado con las actualizaciones del SAT</li>
+                        <li>Lo mejor en gestión para tu negocio: Contabilidad, facturación, nómina, ventas y más...</li>
+                    </ul>
+
+                    <p class="lead"><strong>¡Únete a más de 1.2 millones de usuarios satisfechos!</strong></p>
+
+                    <div class="hero-cta">
+                        <a href="@Url.Action("Index", "Contacto")" class="btn btn-custom btn-primary-custom me-3">Contáctanos</a>
+                        <button class="btn btn-custom btn-outline-custom" data-bs-toggle="modal" data-bs-target="#videoModal">Ver Demo</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <!-- Espacio para imagen o video -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>Conoce cómo en Factura Facil transformamos la gestión empresarial de tu empresa</h3>
+                        <p>Descubre todas las funcionalidades que tenemos para ti</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video-placeholder" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <p class="mt-3">Ve el video</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Encuentra la mejor solución para tu negocio</h2>
+                <p>Conoce nuestros sistemas</p>
+            </div>
+
+            <!-- Facturación Comercial -->
+            <div class="product-category" id="facturacion">
+                <div class="category-header">
+                    FACTURACIÓN COMERCIAL
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <h4>COBE73 START</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Facturación electrónica CFDI 4.0</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 1 Usuario incluido</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Catálogo de productos</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Control de clientes</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Reportes básicos</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Timbrado ilimitado</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 1 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <h4>COBE73 HALF</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Todo lo de START +</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 3 Usuarios incluidos</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Inventarios avanzados</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Cuentas por cobrar</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Punto de venta</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Reportes avanzados</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 2 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <h4>COBE73 FULL</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Todo lo de HALF +</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Usuarios ilimitados</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Cuentas por pagar</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Bancos y conciliación</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Contabilidad electrónica</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Multi-empresa</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 3 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nómina -->
+            <div class="product-category" id="nomina">
+                <div class="category-header">
+                    NÓMINA
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <h4>COBE73 NÓMINA</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Recibos de nómina CFDI 4.0</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Cálculo automático de impuestos</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> IMSS e INFONAVIT</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> PTU y finiquitos</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Reportes al SAT</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Dispersión bancaria</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 4 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carta Porte -->
+            <div class="product-category" id="carta-porte">
+                <div class="category-header">
+                    CARTA PORTE
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <h4>COBE73 CARTA PORTE</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Complemento Carta Porte 3.3</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Catálogos SAT actualizados</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Órdenes de embarque</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Cotizaciones por ruta</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Control de unidades</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Operadores y rutas</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 5 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Respaldos -->
+            <div class="product-category" id="respaldos">
+                <div class="category-header">
+                    RESPALDOS
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <h4>COBE73 RESPALDOS</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Respaldo automático en la nube</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Almacenamiento seguro</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Recuperación rápida</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Historial de versiones</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Encriptación de datos</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 6 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <h4>COBE73 WEB SERVICE</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> API REST para integración</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Documentación completa</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Soporte técnico</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Webhooks</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Autenticación segura</li>
+                            </ul>
+                            <a href="@Url.Action("Details", "Productos", new { id = 7 })" class="btn btn-primary w-100 mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>1.2M+</h3>
+                        <p>Usuarios Satisfechos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <i class="bi bi-building"></i>
+                        <h3>500+</h3>
+                        <p>Distribuidores en México</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <i class="bi bi-award-fill"></i>
+                        <h3>25+</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <h2>¿Tienes dudas? ¡Contáctanos!</h2>
+            <div class="search-box">
+                <form asp-controller="Home" asp-action="Search" method="get">
+                    <div class="input-group">
+                        <input type="text" name="query" class="form-control" placeholder="Realiza una búsqueda...">
+                        <button class="btn" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+            <a href="@Url.Action("Index", "Contacto")" class="btn btn-custom btn-primary-custom btn-lg">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Video Demostrativo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Demo" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+﻿@{
+    ViewData["Title"] = "Distribuidores - FacturaFácil.net";
+}
+
+<!-- Hero Section -->
+<section class="hero-section-small">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold">Conviértete en Distribuidor</h1>
+                <p class="lead">Únete a nuestra red de distribuidores y genera ingresos recurrentes con nuestros sistemas de facturación</p>
+            </div>
+            <div class="col-lg-4 text-end">
+                <a asp-controller="Distribuidores" asp-action="Registro" class="btn btn-custom btn-primary-custom btn-lg">
+                    <i class="bi bi-person-plus me-2"></i>Registrarme Ahora
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beneficios Section -->
+<section class="distribuidores-section">
+    <div class="container">
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>@TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+
+        <!-- Por qué ser distribuidor -->
+        <div class="info-card">
+            <div class="text-center mb-5">
+                <h2 class="section-title">¿Por qué ser Distribuidor de FacturaFácil.net?</h2>
+                <p class="section-subtitle">Oportunidad de negocio con ingresos recurrentes y soporte completo</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-cash-stack"></i>
+                        </div>
+                        <h4>Ingresos Recurrentes</h4>
+                        <p>Gana comisiones mensuales por cada cliente activo. Construye un ingreso estable y predecible.</p>
+                        <ul>
+                            <li>Comisión por venta inicial</li>
+                            <li>Comisión mensual recurrente</li>
+                            <li>Bonos por volumen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h4>Mercado en Crecimiento</h4>
+                        <p>La facturación electrónica es obligatoria. Miles de empresas necesitan nuestros servicios.</p>
+                        <ul>
+                            <li>Demanda constante</li>
+                            <li>Mercado en expansión</li>
+                            <li>Clientes recurrentes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>Soporte Completo</h4>
+                        <p>Te acompañamos en cada paso con capacitación, materiales y soporte técnico.</p>
+                        <ul>
+                            <li>Capacitación inicial</li>
+                            <li>Material de ventas</li>
+                            <li>Soporte técnico 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Producto de Calidad</h4>
+                        <p>Vende un producto confiable, actualizado y respaldado por años de experiencia.</p>
+                        <ul>
+                            <li>Actualizaciones constantes</li>
+                            <li>Cumplimiento SAT</li>
+                            <li>Tecnología de punta</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4>Red de Distribuidores</h4>
+                        <p>Forma parte de una comunidad de distribuidores exitosos en todo México.</p>
+                        <ul>
+                            <li>Networking</li>
+                            <li>Mejores prácticas</li>
+                            <li>Eventos exclusivos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h4>Herramientas Digitales</h4>
+                        <p>Acceso a plataforma de distribuidores con reportes, comisiones y recursos.</p>
+                        <ul>
+                            <li>Panel de control</li>
+                            <li>Reportes en tiempo real</li>
+                            <li>Material descargable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Niveles de Distribuidor -->
+        <div class="niveles-section">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Niveles de Distribuidor</h2>
+                <p class="section-subtitle">Crece con nosotros y aumenta tus comisiones</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="nivel-card">
+                        <div class="nivel-badge badge-bronce">BRONCE</div>
+                        <h3>Distribuidor Bronce</h3>
+                        <div class="nivel-comision">25%</div>
+                        <p class="text-muted">Comisión sobre ventas</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> 0 - 10 clientes activos</li>
+                            <li><i class="bi bi-check2"></i> Capacitación básica</li>
+                            <li><i class="bi bi-check2"></i> Material de ventas</li>
+                            <li><i class="bi bi-check2"></i> Soporte por email</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="nivel-card nivel-destacado">
+                        <div class="nivel-badge badge-plata">PLATA</div>
+                        <h3>Distribuidor Plata</h3>
+                        <div class="nivel-comision">35%</div>
+                        <p class="text-muted">Comisión sobre ventas</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> 11 - 30 clientes activos</li>
+                            <li><i class="bi bi-check2"></i> Capacitación avanzada</li>
+                            <li><i class="bi bi-check2"></i> Material premium</li>
+                            <li><i class="bi bi-check2"></i> Soporte prioritario</li>
+                            <li><i class="bi bi-check2"></i> Bonos trimestrales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="nivel-card">
+                        <div class="nivel-badge badge-oro">ORO</div>
+                        <h3>Distribuidor Oro</h3>
+                        <div class="nivel-comision">45%</div>
+                        <p class="text-muted">Comisión sobre ventas</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> 31+ clientes activos</li>
+                            <li><i class="bi bi-check2"></i> Capacitación personalizada</li>
+                            <li><i class="bi bi-check2"></i> Material exclusivo</li>
+                            <li><i class="bi bi-check2"></i> Soporte 24/7</li>
+                            <li><i class="bi bi-check2"></i> Bonos mensuales</li>
+                            <li><i class="bi bi-check2"></i> Eventos VIP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Requisitos -->
+        <div class="requisitos-section">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Requisitos para ser Distribuidor</h2>
+                    <div class="requisito-item">
+                        <div class="requisito-icon">
+                            <i class="bi bi-1-circle-fill"></i>
+                        </div>
+                        <div class="requisito-content">
+                            <h5>Persona Física o Moral</h5>
+                            <p>Puedes registrarte como persona física con actividad empresarial o como empresa constituida.</p>
+                        </div>
+                    </div>
+                    <div class="requisito-item">
+                        <div class="requisito-icon">
+                            <i class="bi bi-2-circle-fill"></i>
+                        </div>
+                        <div class="requisito-content">
+                            <h5>Experiencia en Ventas</h5>
+                            <p>Preferentemente con experiencia en venta de software o servicios B2B.</p>
+                        </div>
+                    </div>
+                    <div class="requisito-item">
+                        <div class="requisito-icon">
+                            <i class="bi bi-3-circle-fill"></i>
+                        </div>
+                        <div class="requisito-content">
+                            <h5>Documentación Legal</h5>
+                            <p>RFC, comprobante de domicilio, identificación oficial y constancia de situación fiscal.</p>
+                        </div>
+                    </div>
+                    <div class="requisito-item">
+                        <div class="requisito-icon">
+                            <i class="bi bi-4-circle-fill"></i>
+                        </div>
+                        <div class="requisito-content">
+                            <h5>Compromiso y Dedicación</h5>
+                            <p>Disponibilidad para capacitación y atención a clientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cta-card">
+                        <h3><i class="bi bi-rocket-takeoff me-2"></i>¿Listo para empezar?</h3>
+                        <p>Completa el formulario de registro y nos pondremos en contacto contigo para iniciar el proceso.</p>
+                        <a asp-controller="Distribuidores" asp-action="Registro" class="btn btn-custom btn-primary-custom btn-lg w-100 mb-3">
+                            <i class="bi bi-person-plus me-2"></i>Registrarme como Distribuidor
+                        </a>
+                        <a asp-controller="Distribuidores" asp-action="Beneficios" class="btn btn-custom btn-outline-custom btn-lg w-100">
+                            <i class="bi bi-info-circle me-2"></i>Ver más beneficios
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="testimonios-section">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Lo que dicen nuestros Distribuidores</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"En 6 meses logré tener 15 clientes activos. Los ingresos recurrentes me dan estabilidad financiera."</p>
+                        <div class="testimonio-autor">
+                            <strong>Carlos Méndez</strong>
+                            <span>Distribuidor Plata - Guadalajara</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"El soporte técnico es excelente. Mis clientes están muy satisfechos con el producto."</p>
+                        <div class="testimonio-autor">
+                            <strong>María González</strong>
+                            <span>Distribuidor Oro - Monterrey</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonio-card">
+                        <div class="testimonio-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"La capacitación fue muy completa. Me siento seguro vendiendo el producto."</p>
+                        <div class="testimonio-autor">
+                            <strong>Roberto Sánchez</strong>
+                            <span>Distribuidor Bronce - CDMX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

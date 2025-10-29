@@ -1,0 +1,536 @@
+﻿@{
+    ViewData["Title"] = "Precios - FacturaFácil.net";
+}
+
+<!-- Hero Section -->
+<section class="hero-section-small">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold">Planes y Precios</h1>
+                <p class="lead">Precios transparentes y competitivos. Sin costos ocultos.</p>
+            </div>
+            <div class="col-lg-4 text-end">
+                <a asp-controller="Precios" asp-action="Calculadora" class="btn btn-custom btn-outline-custom">
+                    <i class="bi bi-calculator me-2"></i>Calculadora de Costos
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Precios Section -->
+<section class="precios-section">
+    <div class="container">
+
+        <!-- Sistemas de Facturación -->
+        <div class="precios-category" id="start">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Sistemas de Facturación</h2>
+                <p class="section-subtitle">Elige el plan que mejor se adapte a tu negocio</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- COBE73 START -->
+                <div class="col-lg-4">
+                    <div class="precio-card">
+                        <div class="precio-header">
+                            <h3>COBE73 START</h3>
+                            <p class="text-muted">Para emprendedores</p>
+                        </div>
+                        <div class="precio-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">2,500</span>
+                            <span class="period">MXN</span>
+                        </div>
+                        <p class="precio-subtitle">Licencia perpetua + Anualidad</p>
+
+                        <div class="precio-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Licencia:</span>
+                                <span class="detail-value">$2,500 MXN</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Anualidad:</span>
+                                <span class="detail-value">$1,200 MXN/año</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usuario adicional:</span>
+                                <span class="detail-value">$500 MXN/año</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Timbres:</span>
+                                <span class="detail-value">Ilimitados</span>
+                            </div>
+                        </div>
+
+                        <div class="precio-features">
+                            <h5>Incluye:</h5>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i> Facturación CFDI 4.0</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 1 usuario incluido</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Catálogo de clientes</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Catálogo de productos</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Timbrado ilimitado</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Envío por email</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Reportes básicos</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Soporte por email</li>
+                            </ul>
+                        </div>
+
+                        <a asp-controller="Contacto" asp-action="Index" class="btn btn-custom btn-outline-custom w-100">
+                            Solicitar Cotización
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COBE73 HALF -->
+                <div class="col-lg-4" id="half">
+                    <div class="precio-card precio-destacado">
+                        <div class="precio-badge">MÁS POPULAR</div>
+                        <div class="precio-header">
+                            <h3>COBE73 HALF</h3>
+                            <p class="text-muted">Para negocios en crecimiento</p>
+                        </div>
+                        <div class="precio-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">4,500</span>
+                            <span class="period">MXN</span>
+                        </div>
+                        <p class="precio-subtitle">Licencia perpetua + Anualidad</p>
+
+                        <div class="precio-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Licencia:</span>
+                                <span class="detail-value">$4,500 MXN</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Anualidad:</span>
+                                <span class="detail-value">$2,400 MXN/año</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usuario adicional:</span>
+                                <span class="detail-value">$800 MXN/año</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Timbres:</span>
+                                <span class="detail-value">Ilimitados</span>
+                            </div>
+                        </div>
+
+                        <div class="precio-features">
+                            <h5>Todo lo de START más:</h5>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i> Hasta 3 usuarios</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Control de inventarios</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Cuentas por cobrar</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Cuentas por pagar</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Complemento de pagos</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Multi-sucursal</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Reportes avanzados</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Soporte telefónico</li>
+                            </ul>
+                        </div>
+
+                        <a asp-controller="Contacto" asp-action="Index" class="btn btn-custom btn-primary-custom w-100">
+                            Solicitar Cotización
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COBE73 FULL -->
+                <div class="col-lg-4" id="full">
+                    <div class="precio-card">
+                        <div class="precio-header">
+                            <h3>COBE73 FULL</h3>
+                            <p class="text-muted">Solución empresarial</p>
+                        </div>
+                        <div class="precio-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">7,500</span>
+                            <span class="period">MXN</span>
+                        </div>
+                        <p class="precio-subtitle">Licencia perpetua + Anualidad</p>
+
+                        <div class="precio-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Licencia:</span>
+                                <span class="detail-value">$7,500 MXN</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Anualidad:</span>
+                                <span class="detail-value">$3,600 MXN/año</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Usuario adicional:</span>
+                                <span class="detail-value">$1,000 MXN/año</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Timbres:</span>
+                                <span class="detail-value">Ilimitados</span>
+                            </div>
+                        </div>
+
+                        <div class="precio-features">
+                            <h5>Todo lo de HALF más:</h5>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i> Usuarios ilimitados</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Módulo de bancos</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Conciliación bancaria</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Contabilidad electrónica</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Flujo de efectivo</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Dashboard ejecutivo</li>
+                                <li><i class="bi bi-check-circle-fill"></i> API para integraciones</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Soporte prioritario 24/7</li>
+                            </ul>
+                        </div>
+
+                        <a asp-controller="Contacto" asp-action="Index" class="btn btn-custom btn-outline-custom w-100">
+                            Solicitar Cotización
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complementos -->
+        <div class="complementos-precios">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Complementos y Servicios Adicionales</h2>
+                <p class="section-subtitle">Amplía las capacidades de tu sistema</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Nómina -->
+                <div class="col-lg-6">
+                    <div class="complemento-precio-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-icon">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Nómina Electrónica</h4>
+                                <p class="text-muted mb-0">Sistema completo de nómina CFDI 4.0</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-amount">
+                                    <span class="amount">$3,500</span>
+                                    <span class="period">MXN</span>
+                                </div>
+                                <p class="text-muted small mb-0">+ $1,800/año</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carta Porte -->
+                <div class="col-lg-6">
+                    <div class="complemento-precio-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-icon">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Carta Porte 3.3</h4>
+                                <p class="text-muted mb-0">Complemento para transporte</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-amount">
+                                    <span class="amount">$2,800</span>
+                                    <span class="period">MXN</span>
+                                </div>
+                                <p class="text-muted small mb-0">+ $1,500/año</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Respaldos 50GB -->
+                <div class="col-lg-6">
+                    <div class="complemento-precio-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-icon">
+                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Respaldos 50GB</h4>
+                                <p class="text-muted mb-0">Respaldo automático en la nube</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-amount">
+                                    <span class="amount">$600</span>
+                                    <span class="period">/año</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Respaldos 100GB -->
+                <div class="col-lg-6">
+                    <div class="complemento-precio-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-icon">
+                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Respaldos 100GB</h4>
+                                <p class="text-muted mb-0">Respaldo automático en la nube</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-amount">
+                                    <span class="amount">$1,000</span>
+                                    <span class="period">/año</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Respaldos 500GB -->
+                <div class="col-lg-6">
+                    <div class="complemento-precio-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-icon">
+                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Respaldos 500GB</h4>
+                                <p class="text-muted mb-0">Respaldo automático en la nube</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-amount">
+                                    <span class="amount">$3,500</span>
+                                    <span class="period">/año</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Service -->
+                <div class="col-lg-6">
+                    <div class="complemento-precio-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-icon">
+                                    <i class="bi bi-globe"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Web Service API</h4>
+                                <p class="text-muted mb-0">Integración con tus sistemas</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="complemento-precio-amount">
+                                    <span class="amount">$5,000</span>
+                                    <span class="period">MXN</span>
+                                </div>
+                                <p class="text-muted small mb-0">+ $2,500/año</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla Comparativa -->
+        <div class="comparativa-section">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Comparativa de Planes</h2>
+                <p class="section-subtitle">Encuentra las diferencias entre cada sistema</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-comparativa">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th class="text-center">START</th>
+                            <th class="text-center destacado">HALF</th>
+                            <th class="text-center">FULL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Facturación CFDI 4.0</strong></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Usuarios incluidos</strong></td>
+                            <td class="text-center">1</td>
+                            <td class="text-center destacado">3</td>
+                            <td class="text-center">Ilimitados</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Catálogo de clientes/productos</strong></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Control de inventarios</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cuentas por cobrar/pagar</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Complemento de pagos</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Multi-sucursal</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-check-circle-fill text-success"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Módulo de bancos</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contabilidad electrónica</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dashboard ejecutivo</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>API para integraciones</strong></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center destacado"><i class="bi bi-x-circle-fill text-danger"></i></td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soporte</strong></td>
+                            <td class="text-center">Email</td>
+                            <td class="text-center destacado">Teléfono</td>
+                            <td class="text-center">24/7 Prioritario</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- FAQ Precios -->
+        <div class="faq-precios">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Preguntas Frecuentes sobre Precios</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Qué incluye la licencia perpetua?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La licencia perpetua te da derecho a usar el software de por vida. Solo pagas una vez por la licencia y luego una anualidad para mantener actualizaciones y soporte.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Qué pasa si no pago la anualidad?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    El sistema seguirá funcionando, pero no recibirás actualizaciones del SAT, nuevas funcionalidades ni soporte técnico. Es importante mantener la anualidad al día para cumplir con las disposiciones fiscales.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Los timbres tienen costo adicional?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, todos nuestros planes incluyen timbrado ilimitado sin costo adicional. Puedes emitir todas las facturas que necesites.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Puedo cambiar de plan después?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, puedes hacer upgrade a un plan superior en cualquier momento. Solo pagas la diferencia y tu información se migra automáticamente.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    ¿Ofrecen descuentos por volumen?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, ofrecemos descuentos especiales para compras de múltiples licencias. Contacta a nuestro equipo de ventas para una cotización personalizada.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Final -->
+        <div class="cta-box">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3><i class="bi bi-headset me-2"></i>¿Necesitas ayuda para elegir?</h3>
+                    <p>Nuestros asesores te ayudarán a encontrar el plan perfecto para tu negocio</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <a asp-controller="Contacto" asp-action="Index" class="btn btn-custom btn-primary-custom btn-lg">
+                        Contactar Asesor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
