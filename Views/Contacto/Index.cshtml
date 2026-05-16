@@ -35,7 +35,17 @@
                         </div>
                     }
 
-                    <form asp-action="Index" method="post">
+                    @if (ViewBag.ErrorSmtp != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                            <strong>Error al enviar el mensaje.</strong><br />
+                            <small class="text-muted">@ViewBag.ErrorSmtp</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <form asp-action="Enviar" method="post">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label asp-for="Nombre" class="form-label">Nombre Completo *</label>
@@ -78,12 +88,12 @@
                                 <label asp-for="ProductoInteres" class="form-label">Producto de Interés</label>
                                 <select asp-for="ProductoInteres" class="form-select">
                                     <option value="">Selecciona un producto</option>
-                                    <option value="COBE73 START">COBE73 START</option>
-                                    <option value="COBE73 HALF">COBE73 HALF</option>
-                                    <option value="COBE73 FULL">COBE73 FULL</option>
+                                    <option value="Sistema Básico">Sistema Básico</option>
+                                    <option value="Sistema HALF">Sistema HALF</option>
+                                    <option value="Sistema FULL">Sistema FULL</option>
                                     <option value="Nómina">Nómina Electrónica</option>
-                                    <option value="Carta Porte">Carta Porte</option>
-                                    <option value="Otro">Otro</option>
+                                    <option value="Sistema Carta porte">Sistema Carta porte</option>
+                                    <option value="Respaldos">Respaldos</option>
                                 </select>
                                 <span asp-validation-for="ProductoInteres" class="text-danger"></span>
                             </div>

@@ -683,7 +683,7 @@ body[data-theme="light"] .footer-bottom {
     background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
     color: white;
     padding: 60px 0;
-    margin-bottom: 3rem;
+    /*margin-bottom: 3rem;*/
     transition: background 0.3s ease;
 }
 
@@ -1477,6 +1477,499 @@ body[data-theme="light"] .complemento-precio-icon {
 .complemento-precio-icon i {
     font-size: 2rem;
     color: white;
+}
+
+/* ========================================
+   PRECIOS PAGE — ENHANCED STYLES
+   ======================================== */
+
+/* Nav bar quick links */
+.precios-nav-bar {
+    background: var(--sidebar-dark);
+    padding: 0;
+    position: sticky;
+    top: 56px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+body[data-theme="light"] .precios-nav-bar {
+    background: #ECEFF1;
+}
+
+.precios-nav-inner {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.precios-nav-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.precios-nav-link {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    padding: 0.85rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+body[data-theme="light"] .precios-nav-link {
+    color: #546E7A;
+}
+
+.precios-nav-link:hover {
+    color: white;
+    background: rgba(255,255,255,0.07);
+    border-bottom-color: var(--primary-blue);
+}
+
+body[data-theme="light"] .precios-nav-link:hover {
+    color: #37474F;
+    background: rgba(0,0,0,0.05);
+    border-bottom-color: var(--primary-blue);
+}
+
+/* Section headers with icon */
+.precios-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--background-light);
+}
+
+.precios-section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin: 0 0 0.25rem;
+}
+
+.precios-section-header p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.precios-section-icon {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.precios-section-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.carta-porte-icon {
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.timbres-icon {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.respaldos-icon {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Plan number badge */
+.precio-plan-number {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--primary-blue);
+    background: var(--background-light);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+/* Plan icon circle */
+.precio-plan-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--background-light);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.precio-plan-icon i {
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+}
+
+.precio-plan-icon.popular {
+    background: var(--background-light);
+}
+
+.precio-plan-icon.popular i {
+    color: var(--primary-blue);
+}
+
+.precio-plan-icon.premium {
+    background: var(--background-light);
+}
+
+.precio-plan-icon.premium i {
+    color: var(--secondary-blue);
+}
+
+/* Pricing rows inside cards */
+.precio-pricing-table {
+    background: var(--background-light);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    gap: 1rem;
+}
+
+.pricing-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    flex: 1;
+}
+
+.pricing-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    white-space: nowrap;
+}
+
+.pricing-value span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.pricing-value.highlight {
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+}
+
+.pricing-value.secondary {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Carta Porte card — full-width split */
+.carta-porte-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    background: white;
+    border: 2px solid var(--background-light);
+    transition: all 0.3s ease;
+}
+
+.carta-porte-card:hover {
+    box-shadow: 0 15px 50px rgba(0,0,0,0.18);
+    transform: translateY(-4px);
+}
+
+.carta-porte-body {
+    padding: 2.5rem;
+}
+
+.carta-porte-body h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+}
+
+.cp-feature {
+    padding: 0.45rem 0;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.cp-feature i {
+    color: var(--success-green);
+    margin-right: 0.5rem;
+}
+
+body[data-theme="light"] .cp-feature i {
+    color: var(--success-green);
+}
+
+.carta-porte-pricing {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    padding: 2.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cp-pricing-item {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.cp-pricing-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+}
+
+.cp-pricing-item.featured {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+}
+
+.cp-pricing-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 0.2rem;
+}
+
+.cp-pricing-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.cp-pricing-value span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.cp-pricing-item.featured .cp-pricing-value {
+    font-size: 2rem;
+}
+
+/* Timbre cards */
+.timbre-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.timbre-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    border-color: var(--primary-blue);
+}
+
+.timbre-card.timbre-popular {
+    border-color: var(--primary-blue);
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.timbre-card.timbre-popular:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+.timbre-card.timbre-premium {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+}
+
+.timbre-card.timbre-premium .timbre-qty,
+.timbre-card.timbre-premium .timbre-label,
+.timbre-card.timbre-premium .timbre-vigencia {
+    color: rgba(255,255,255,0.9);
+}
+
+.timbre-card.timbre-premium .timbre-price {
+    color: white;
+}
+
+.timbre-badge-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-bottom-left-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.timbre-qty {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    line-height: 1;
+}
+
+.timbre-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.timbre-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.timbre-price span {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.timbre-vigencia {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--background-light);
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    display: inline-block;
+}
+
+.timbre-card.timbre-premium .timbre-vigencia {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Respaldo cards */
+.respaldo-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem 0.75rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.respaldo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.14);
+    border-color: var(--primary-blue);
+}
+
+.respaldo-card.respaldo-popular {
+    border-color: var(--primary-blue);
+    transform: scale(1.04);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.respaldo-card.respaldo-popular:hover {
+    transform: scale(1.04) translateY(-4px);
+}
+
+.respaldo-card.respaldo-premium {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+}
+
+.respaldo-card.respaldo-premium .respaldo-size,
+.respaldo-card.respaldo-premium .respaldo-period {
+    color: rgba(255,255,255,0.9);
+}
+
+.respaldo-card.respaldo-premium .respaldo-icon i,
+.respaldo-card.respaldo-premium .respaldo-price {
+    color: white;
+}
+
+.respaldo-icon i {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.respaldo-size {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.respaldo-price {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.2rem;
+}
+
+.respaldo-price span {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.respaldo-period {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .precios-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .carta-porte-pricing {
+        padding: 2rem 1.5rem;
+    }
+
+    .cp-pricing-item.featured .cp-pricing-value {
+        font-size: 1.5rem;
+    }
+
+    .timbre-qty {
+        font-size: 1.5rem;
+    }
+
+    .respaldo-size {
+        font-size: 1.2rem;
+    }
 }
 
 .complemento-precio-card h4 {
@@ -2325,4 +2818,679 @@ body[data-theme="light"] .back-to-top {
         height: 45px;
         font-size: 1.2rem;
     }
+}
+/* ========================================
+   HOME PAGE — ENHANCED STYLES
+   ======================================== */
+
+.home-hero {
+    position: relative;
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    overflow: hidden;
+    padding: 0;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.home-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(255,255,255,0.07) 0%, transparent 60%);
+}
+
+.home-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 5rem 0 6rem;
+}
+
+.min-vh-75 { min-height: 75vh; }
+
+.home-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50px;
+    padding: 0.45rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(8px);
+}
+
+.home-hero-title {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 800;
+    color: white;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+.home-hero-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    max-width: 560px;
+}
+
+.home-hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.home-hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.home-stat-card {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.home-stat-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-4px);
+}
+
+.home-stat-card i {
+    font-size: 1.8rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 0.5rem;
+}
+
+.home-stat-num {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.home-stat-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.75);
+}
+
+.home-hero-wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.home-hero-wave svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+    fill: var(--background-light);
+    transition: fill 0.3s ease;
+}
+
+body[data-theme="light"] .home-hero-wave svg {
+    fill: #FAFAFA;
+}
+
+/* Section header common */
+.home-section-header {
+    margin-bottom: 3rem;
+}
+
+.home-section-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--background-light);
+    color: var(--primary-blue);
+    border-radius: 50px;
+    padding: 0.4rem 1.1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(33,150,243,0.2);
+}
+
+.home-section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.home-section-header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Products section */
+.home-products {
+    background: var(--background-light);
+    padding: 5rem 0;
+}
+
+.home-product-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.13);
+    border-color: var(--primary-blue);
+}
+
+.home-product-card.home-product-featured {
+    border-color: var(--primary-blue);
+    box-shadow: 0 8px 30px rgba(33,150,243,0.2);
+}
+
+.home-product-badge-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-bottom-left-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.home-product-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--background-light);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.home-product-card:hover .home-product-icon,
+.home-product-card.home-product-featured .home-product-icon {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+}
+
+.home-product-icon i {
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+    transition: color 0.3s ease;
+}
+
+.home-product-card:hover .home-product-icon i,
+.home-product-card.home-product-featured .home-product-icon i {
+    color: white;
+}
+
+.home-product-body {
+    flex-grow: 1;
+}
+
+.home-product-body h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.home-product-body p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.home-product-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-top: 1.25rem;
+    transition: gap 0.2s ease;
+}
+
+.home-product-link:hover {
+    color: var(--secondary-blue);
+    gap: 0.25rem;
+}
+
+/* Why section */
+.home-why {
+    padding: 5rem 0;
+    background: white;
+}
+
+body[data-theme="light"] .home-why {
+    background: #FAFAFA;
+}
+
+.home-why-card {
+    background: var(--background-light);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 100%;
+}
+
+.home-why-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.home-why-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.home-why-icon i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.home-why-card h5 {
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.home-why-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CTA final */
+.home-cta-final {
+    padding: 4rem 0;
+    background: var(--background-light);
+}
+
+.home-cta-inner {
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    border-radius: 24px;
+    padding: 3rem;
+    color: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.home-cta-inner h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.home-cta-inner p {
+    color: rgba(255,255,255,0.85);
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* ========================================
+   NOSOTROS PAGE — ENHANCED STYLES
+   ======================================== */
+
+.nosotros-section {
+    padding: 3rem 0 5rem;
+}
+
+.nosotros-valor-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.nosotros-valor-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+body[data-theme="light"] .nosotros-valor-card {
+    background: #FAFAFA;
+}
+
+.nosotros-valor-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nosotros-valor-icon i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.nosotros-valor-card h5 {
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.nosotros-valor-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.nosotros-about-card {
+    background: white;
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 8px 35px rgba(0,0,0,0.1);
+    border: 1px solid var(--background-light);
+}
+
+body[data-theme="light"] .nosotros-about-card {
+    background: #FAFAFA;
+}
+
+.nosotros-about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nosotros-about-badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--background-light);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.nosotros-about-badge:hover {
+    transform: translateX(6px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.nosotros-about-badge i {
+    font-size: 1.4rem;
+    color: var(--primary-blue);
+    flex-shrink: 0;
+}
+
+.nosotros-about-badge span {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.nosotros-about-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 1rem;
+}
+
+.nosotros-about-card p {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   DISTRIBUIDORES PAGE — ENHANCED STYLES
+   ======================================== */
+
+.dist-stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.dist-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+}
+
+.dist-stat i {
+    font-size: 1.8rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 0.25rem;
+}
+
+.dist-stat-num {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+}
+
+.dist-stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.dist-benefit-card {
+    background: white;
+    border-radius: 18px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.dist-benefit-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+body[data-theme="light"] .dist-benefit-card {
+    background: #FAFAFA;
+}
+
+.dist-benefit-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--background-light);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.dist-benefit-card:hover .dist-benefit-icon {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+}
+
+.dist-benefit-icon i {
+    font-size: 1.4rem;
+    color: var(--primary-blue);
+    transition: color 0.3s ease;
+}
+
+.dist-benefit-card:hover .dist-benefit-icon i {
+    color: white;
+}
+
+.dist-benefit-card h5 {
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.dist-benefit-card p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.dist-requisitos-card {
+    background: white;
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 8px 35px rgba(0,0,0,0.1);
+    border: 1px solid var(--background-light);
+    margin-top: 1rem;
+}
+
+body[data-theme="light"] .dist-requisitos-card {
+    background: #FAFAFA;
+}
+
+.dist-requisitos-card h3 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+}
+
+.dist-requisito-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--background-light);
+}
+
+.dist-requisito-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dist-req-num {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.dist-requisito-item h6 {
+    font-weight: 700;
+    color: var(--secondary-blue);
+    margin-bottom: 0.2rem;
+}
+
+.dist-requisito-item p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.dist-porq-card {
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    color: white;
+    height: 100%;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+}
+
+.dist-porq-card h4 {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: white;
+}
+
+.dist-porq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dist-porq-list li {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.dist-porq-list li:last-child {
+    border-bottom: none;
+}
+
+.dist-porq-list li i {
+    color: rgba(255,255,255,0.9);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-hero-content { padding: 4rem 0 5rem; }
+    .home-hero-title { font-size: 2.2rem; }
+    .home-cta-inner { padding: 2rem; }
+    .home-cta-inner h2 { font-size: 1.5rem; }
+    .dist-stats-row { grid-template-columns: repeat(2, 1fr); }
+    .nosotros-about-card,
+    .dist-requisitos-card { padding: 2rem; }
 }

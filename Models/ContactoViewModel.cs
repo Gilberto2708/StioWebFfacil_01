@@ -37,8 +37,7 @@ namespace WebFFACIL.Models
         [Display(Name = "Mensaje")]
         public string Mensaje { get; set; }
 
-        [Required(ErrorMessage = "Debe aceptar el aviso de privacidad")]
-        [Range(typeof(bool), "true", "true", ErrorMessage = "Debe aceptar el aviso de privacidad")]
+        [MustBeTrue(ErrorMessage = "Debe aceptar el aviso de privacidad")]
         [Display(Name = "Acepto el Aviso de Privacidad")]
         public bool AceptaPrivacidad { get; set; }
     }
