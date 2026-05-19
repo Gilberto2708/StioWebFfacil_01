@@ -1,7 +1,9 @@
 ﻿@model ContactoViewModel
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
 
 @{
     ViewData["Title"] = "Contacto - FacturaFácil.net";
+    var whatsAppPhone = Configuration["WhatsApp:PhoneNumber"] ?? "526681790007";
 }
 
 <!-- Hero Section -->
@@ -137,7 +139,7 @@
                         </div>
                         <div class="contacto-item-content">
                             <h5>Dirección</h5>
-                            <p>GUADALUPE VICTORIA NO. 28 PONIENTE<br>Col. Centro, Los Mochis<br>C.P. 81200</p>
+                            <p>Bacum 45-53, Privada Conquistadores<br>C.P. 83126 Hermosillo, Sonora</p>
                         </div>
                     </div>
 
@@ -148,8 +150,7 @@
                         <div class="contacto-item-content">
                             <h5>Teléfono</h5>
                             <p>
-                                <a href="tel:+525555551234">(662) 1180415</a><br>
-                                <a href="tel:+525555555678">(668) 8115110</a>
+                                <a href="tel:+526621180415">(662) 1180415</a>
                             </p>
                         </div>
                     </div>
@@ -161,8 +162,7 @@
                         <div class="contacto-item-content">
                             <h5>Email</h5>
                             <p>
-                                <a href="mailto:info@facturafacil.net">info@facturafacil.net</a><br>
-                                <a href="mailto:facturacion@facturafacil.net">facturacion@facturafacil.net</a>
+                                <a href="mailto:info@facturafacil.net">info@facturafacil.net</a>
                             </p>
                         </div>
                     </div>
@@ -178,38 +178,30 @@
                     </div>
                 </div>
 
-                <!-- Redes Sociales -->
-                <div class="redes-sociales-card mb-4">
-                    <h4 class="mb-3">Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link facebook" title="Facebook">
-                            <i class="bi bi-facebook"></i>
+                <!-- Redes Sociales + Soporte Rápido -->
+                <div class="contacto-extra-card">
+                    <div class="contacto-extra-section">
+                        <h5><i class="bi bi-share-fill me-2 text-primary"></i>Síguenos</h5>
+                        <div class="social-links mt-2">
+                            <a href="https://www.facebook.com/FacturaFacil/" target="_blank" rel="noopener" class="social-link facebook" title="Facturación Electrónica Factura Fácil | Hermosillo">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/facturafacil.net1" target="_blank" rel="noopener" class="social-link instagram" title="facturafacil.net (@@facturafacil.net1)">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="my-3">
+                    <div class="contacto-extra-section">
+                        <h5><i class="bi bi-headset me-2 text-primary"></i>Soporte Rápido</h5>
+                        <p class="text-muted small mb-3">¿Necesitas ayuda inmediata?</p>
+                        <a href="#" class="btn btn-custom btn-outline-custom w-100 mb-2">
+                            <i class="bi bi-chat-dots-fill me-2"></i>Chat en Vivo
                         </a>
-                        <a href="#" class="social-link twitter" title="Twitter">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        <a href="#" class="social-link linkedin" title="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link youtube" title="YouTube">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                        <a href="#" class="social-link whatsapp" title="WhatsApp">
-                            <i class="bi bi-whatsapp"></i>
+                        <a href="https://wa.me/@whatsAppPhone" target="_blank" rel="noopener" class="btn btn-custom btn-success w-100">
+                            <i class="bi bi-whatsapp me-2"></i>WhatsApp
                         </a>
                     </div>
-                </div>
-
-                <!-- Soporte Rápido -->
-                <div class="soporte-rapido-card">
-                    <h4 class="mb-3">Soporte Rápido</h4>
-                    <p class="text-muted mb-3">¿Necesitas ayuda inmediata?</p>
-                    <a href="#" class="btn btn-custom btn-outline-custom w-100 mb-2">
-                        <i class="bi bi-chat-dots-fill me-2"></i>Chat en Vivo
-                    </a>
-                    <a href="https://wa.me/525555551234" target="_blank" class="btn btn-custom btn-success w-100">
-                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
-                    </a>
                 </div>
 
             </div>
@@ -220,10 +212,21 @@
             <div class="col-12">
                 <div class="mapa-card">
                     <h3 class="mb-4 text-center">Encuéntranos</h3>
-                    <div class="mapa-placeholder">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <p>Mapa de ubicación</p>
-                        <small class="text-muted">Av. Insurgentes Sur 1234, Col. Del Valle, CDMX</small>
+                    <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm mb-3">
+                        <iframe
+                            src="https://www.google.com/maps?q=Bacum+45-53,+Privada+Conquistadores,+83126,+Hermosillo,+Sonora&output=embed"
+                            title="Ubicación FacturaFácil"
+                            style="border:0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="text-center mb-1">Bacum 45-53, Privada Conquistadores, C.P. 83126, Hermosillo, Sonora</p>
+                    <div class="text-center">
+                        <a href="https://maps.google.com/?q=Bacum+45-53,+Privada+Conquistadores,+83126,+Hermosillo,+Sonora" target="_blank" rel="noopener" class="btn btn-custom btn-outline-custom btn-sm">
+                            <i class="bi bi-geo-alt-fill me-1"></i>Abrir en Google Maps
+                        </a>
                     </div>
                 </div>
             </div>

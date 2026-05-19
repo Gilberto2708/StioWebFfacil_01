@@ -2619,6 +2619,24 @@ body[data-theme="light"] .timeline::before {
         background: #25D366;
     }
 
+    .social-link.instagram {
+        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    }
+
+/* Tarjeta unificada Síguenos + Soporte Rápido */
+.contacto-extra-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.75rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contacto-extra-section h5 {
+    color: var(--secondary-blue);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* Soporte Rápido */
 .soporte-rapido-card {
     background: white;

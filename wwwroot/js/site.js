@@ -125,12 +125,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const chatButton = document.getElementById('chatButton');
     if (chatButton) {
         chatButton.addEventListener('click', function () {
-            // Tu número de WhatsApp con código de país (sin +, espacios ni guiones)
-            // Ejemplo: México = 52, España = 34, Colombia = 57
-            const phoneNumber = '526878786642'; 
+            const configuredPhone = chatButton.dataset.whatsappPhone || '';
+            const phoneNumber = configuredPhone.replace(/\D/g, '');
 
-            // Mensaje predeterminado
-            const message = '¡Hola! Tengo una consulta sobre FacturaFacil.net';
+            if (!phoneNumber) {
+                console.warn('WhatsApp phone number is not configured');
+                return;
+            }
+
+            const message = chatButton.dataset.whatsappMessage || '¡Hola!';
 
             // Abrir WhatsApp
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
