@@ -93,3 +93,8 @@ Copy
 --background-light: #F5F7FA
 --text-primary: #263238
 --text-secondary: #546E7A
+
+## 🚀 Comando de publicación (PowerShell)
+
+```powershell
+dotnet publish "C:\SitioWebFFacil\StioWebFfacil_01\WebFFACIL.csproj" -c Release -o "C:\inetpub\vhosts\facturafacil.net\sitio.facturafacil.net"
