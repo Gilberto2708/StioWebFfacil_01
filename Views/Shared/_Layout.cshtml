@@ -2,6 +2,7 @@
 @{
     var whatsAppPhone = Configuration["WhatsApp:PhoneNumber"] ?? string.Empty;
     var whatsAppMessage = Configuration["WhatsApp:DefaultMessage"] ?? "¡Hola!";
+    var privacyPdfUrl = Configuration["PrivacyNotice:PdfUrl"] ?? "/docs/aviso-de-privacidad.pdf";
 }
 
 <!DOCTYPE html>
@@ -128,6 +129,10 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 FacturaFácil.net - Todos los derechos reservados</p>
+                <p class="footer-privacy-text">
+                    Al enviar el formulario estoy consciente y autorizo que mis datos personales sean tratados conforme a lo previsto en el presente
+                    <a href="@privacyPdfUrl" target="_blank" rel="noopener">aviso de privacidad</a>.
+                </p>
             </div>
         </div>
     </footer>

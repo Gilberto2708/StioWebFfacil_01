@@ -622,9 +622,33 @@ body[data-theme="light"] .footer ul li a:hover {
     color: rgba(255,255,255,0.6);
 }
 
+.footer-privacy-text {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.footer-privacy-text a {
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+.footer-privacy-text a:hover {
+    color: #fff;
+}
+
 body[data-theme="light"] .footer-bottom {
     border-top-color: rgba(55,71,79,0.1);
     color: rgba(55,71,79,0.6);
+}
+
+body[data-theme="light"] .footer-privacy-text a {
+    color: #00BCD4;
+}
+
+body[data-theme="light"] .footer-privacy-text a:hover {
+    color: #007c91;
 }
 
 /* Chat Button */

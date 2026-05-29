@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Contacto - FacturaFácil.net";
     var whatsAppPhone = Configuration["WhatsApp:PhoneNumber"] ?? "526681790007";
+    var privacyPdfUrl = Configuration["PrivacyNotice:PdfUrl"] ?? "/docs/aviso-de-privacidad.pdf";
 }
 
 <!-- Hero Section -->
@@ -110,7 +111,8 @@
                                 <div class="form-check">
                                     <input asp-for="AceptaPrivacidad" class="form-check-input" type="checkbox" required />
                                     <label asp-for="AceptaPrivacidad" class="form-check-label">
-                                        Acepto el <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal">Aviso de Privacidad</a> *
+                                        Al enviar el formulario estoy consciente y autorizo que mis datos personales sean tratados conforme a lo previsto en el presente
+                                        <a href="@privacyPdfUrl" target="_blank" rel="noopener">aviso de privacidad</a>. *
                                     </label>
                                     <span asp-validation-for="AceptaPrivacidad" class="text-danger d-block"></span>
                                 </div>
